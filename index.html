@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="cover.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <title>Colour Average</title>
+</head>
+
+<body>
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+
+        <div class="inner cover">
+          <h1 class="cover-heading">Get the Average of Two Colours</h1>
+          <p class="lead">Please enter the 6-character hex code of the colours you want the average of.</p>
+          <p class="lead">
+
+
+        <div class="form-inline">
+          <label for="colour1" class="col-2 col-form-label">Colour 1</label>
+           <div class="col-4">
+             <input class="form-control" type="text" id="colour1">
+           </div>
+           <label for="colour2" class="col-2 col-form-label">Colour 2</label>
+           <div class="col-4">
+             <input class="form-control" type="text" id="colour2">
+           </div>
+         </div>
+        <br>
+        <button type="submit" class="btn btn-lg btn-default" onclick="avgColours();">Get Your Average!</button>
+        <br><br>
+        <div id="resultText">
+        <h2>The average of <span id="hex1"></span> and <span id="hex2"></span> is: </h2>
+        <br>
+        <h1><div id="resultVal"></div></h1>
+        <script type="text/javascript">
+            $("#resultText").hide();
+        </script>
+        </div>
+      </p>
+    </div>
+
+    <div class="mastfoot">
+      <div class="inner">
+        <p>Cover template borrowed from <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="HexColorAvg.js"></script>
+
+</body>
+</html>
